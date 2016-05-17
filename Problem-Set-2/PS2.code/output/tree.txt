@@ -1,0 +1,34 @@
+numinjured >= 1.0
+  oppnuminjured >= 4.0
+    temperature >= 62.69854496 : 0
+    temperature < 62.69854496
+      oppdayssincegame >= 3.0 : 1
+      oppdayssincegame < 3.0 : 0
+  oppnuminjured < 4.0
+    temperature >= 48.44667111
+      opprundifferential >= 106.0 : 0
+      opprundifferential < 106.0
+        rundifferential >= 120.0 : 0
+        rundifferential < 120.0
+          oppnuminjured >= 2.0
+            numinjured >= 1.91949910555
+              dayssincegame >= 0.0
+                oppnuminjured >= 2.04451038576
+                  numinjured >= 3.0 : 1
+                  numinjured < 3.0 : 0
+                oppnuminjured < 2.04451038576 : 1
+              dayssincegame < 0.0 : 0
+            numinjured < 1.91949910555 : 0
+          oppnuminjured < 2.0
+            oppwinningpercent >= 0.195529965 : 1
+            oppwinningpercent < 0.195529965
+              oppwinningpercent >= 0.050022726 : 0
+              oppwinningpercent < 0.050022726 : 1
+    temperature < 48.44667111 : 0
+numinjured < 1.0
+  opprundifferential >= 13.0
+    oppnuminjured >= 0.0
+      oppnuminjured >= 1.0 : 0
+      oppnuminjured < 1.0 : 1
+    oppnuminjured < 0.0 : 1
+  opprundifferential < 13.0 : 1
